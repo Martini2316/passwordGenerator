@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>PASSWORD GENERATOR</title>
+</head>
+<body>
+    <div id="container">
+        <h1 style="color: white; letter-spacing: 2px;">Your <span style="color: orange;">Password</span> Generator!</h1>
+        Number of characters: <input id="iloscliczb" class="iloscliczb" type="number"><input disabled type="text" value="(min: 1, max 200)" id="info"><br/><br/>
+        Numbers: <input id="litery" class="yes-no-btn" type="button" value="YES"><br/><br/>
+        Letters: <input id="cyfry" class="yes-no-btn" type="button" value="YES"><br/><br/>
+        Punctuation: <input id="interpunkcja" class="yes-no-btn" type="button" value="YES"><br/><br/>
+        <button class="baton" onclick="generatorhasla()">Generate</button><br/><br/>
+        <input type="button" onclick="czyscioch()" class="clear" id="clear" value="Clear">
+        <input type="text" readonly placeholder="Here will be your password:)" class="wygenerowane" id="password">
+        <button class="kopiuj" id="copy" onclick="copyPassword()">Copy!</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
